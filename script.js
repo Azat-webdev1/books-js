@@ -32,3 +32,10 @@ blank[4].before(blank[8]);
 blank[49].before(blank[55]);
 blank[50].after(blank[48]);
 blank[54].before(blank[51]);
+
+//в шестой книге добавить главу
+const newElem = document.createElement('li');
+newElem.textContent = 'Глава 8: За пределами ES6';
+
+blanks[2].append(newElem);
+blank[26].before(newElem);
